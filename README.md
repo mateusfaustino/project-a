@@ -12,7 +12,7 @@ Este repositório contém uma aplicação [Laravel](https://laravel.com) com fro
    docker compose up --build
    ```
 
-O aplicativo estará disponível em [http://localhost:8000](http://localhost:8000) e o phpMyAdmin em [http://localhost:8080](http://localhost:8080). O banco de dados MySQL ficará disponível na porta `3306` com o usuário `laravel` e senha `secret`.
+O aplicativo estará disponível em [http://localhost:8000](http://localhost:8000) e o phpMyAdmin em [http://localhost:8080](http://localhost:8080). O banco de dados MySQL ficará disponível na porta `3307` com o usuário `laravel` e senha `secret`.
 
 ## Rodando localmente sem Docker
 
