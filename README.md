@@ -2,12 +2,26 @@
 
 Este repositório contém uma aplicação [Laravel](https://laravel.com) com frontend em React e Vite.
 
-## Pré-requisitos
+## Usando Docker
+1. Copie o arquivo de ambiente:
+   ```bash
+   cp src/.env.example src/.env
+   ```
+2. Suba os containers:
+   ```bash
+   docker compose up --build
+   ```
+
+O aplicativo estará disponível em [http://localhost:8000](http://localhost:8000) e o phpMyAdmin em [http://localhost:8080](http://localhost:8080). O banco de dados MySQL ficará disponível na porta `3306` com o usuário `laravel` e senha `secret`.
+
+## Rodando localmente sem Docker
+
+### Pré-requisitos
 - PHP 8.2+
 - [Composer](https://getcomposer.org/)
 - Node.js e npm
 
-## Passo a passo
+### Passo a passo
 1. Entre na pasta do projeto e acesse o diretório `src`:
    ```bash
    cd src
@@ -27,7 +41,7 @@ Este repositório contém uma aplicação [Laravel](https://laravel.com) com fro
    php artisan migrate
    ```
 
-## Executando
+### Executando
 Para iniciar o servidor de desenvolvimento, execute:
 ```bash
 composer run dev
